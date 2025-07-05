@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
+  --accent1-color: #A42212;
+  --accent2-color: white;
+
+  --heading-font: "IM Fell French Canon SC", serif;
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  --nav-link-color: #396E94;
+  --nav-background-color: #E7C24F;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #fff;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1, header h2, header h3 {
+  font-family: var(--heading-font);
+  margin: 0.5em;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-weight: bold;
+  padding: 0.5em 1em;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  border-radius: 5px;
+}
+
+main {
+  padding: 2em 0;
+  text-align: center;
+}
+
+main h2 {
+  font-family: var(--heading-font);
+  margin-top: 1.5em;
+  color: var(--accent1-color);
+}
+
+main p {
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+}
+
+.photo {
+  width: 250px;
+  height: auto;
+  margin: 1em;
+  border: 2px solid #282222;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
